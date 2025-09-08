@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anshumat Foundation</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Anshumat Foundation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+          <li class="nav-item"><a class="nav-link" href="#initiatives">Initiatives</a></li>
+          <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#join">Join</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn btn-outline-light ms-3" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section id="home" class="hero-section text-center text-light p-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Empowering Through Knowledge & Mentorship</h1>
+      <p class="lead">Building a brighter future with trust, guidance, and opportunities.</p>
+      <a href="#mission" class="btn btn-primary btn-lg">Learn More</a>
+    </div>
+  </section>
+
+  
+  <section id="mission" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Our Mission</h2>
+        <p class="lead">What we stand for and work towards</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 animate-card">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">Knowledge</h5>
+              <p class="card-text">Providing access to valuable resources and education.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 animate-card">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">Mentorship</h5>
+              <p class="card-text">Connecting mentors and mentees for career development.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 animate-card">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">Growth</h5>
+              <p class="card-text">Creating opportunities for personal and professional success.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="initiatives" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Our Initiatives</h2>
+        <p class="lead">Driving impact through community engagement</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card shadow-sm h-100 animate-card">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Youth Mentorship Program</h5>
+              <p class="card-text">Pairing students with industry experts for career growth.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card shadow-sm h-100 animate-card">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Community Workshops</h5>
+              <p class="card-text">Free sessions on coding, leadership, and more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="programs" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Our Programs</h2>
+        <p class="lead">Initiatives designed for impact</p>
+      </div>
+      <div class="row g-4" id="programs-container">
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Section -->
+  <section id="join" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="text-center mb-5">Join Our Community</h2>
+          <form id="registerForm" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="mb-3">
+              <label for="regName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="regName" aria-label="Full Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="regEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="regEmail" aria-label="Email Address" required>
+            </div>
+            <div class="mb-3">
+              <label for="role" class="form-label">Role</label>
+              <select class="form-control" id="role" aria-label="Role Selection" required>
+                <option value="">Select Role</option>
+                <option value="student">Student</option>
+                <option value="mentor">Mentor</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="text-center mb-5">Contact Us</h2>
+          <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" aria-label="Full Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" aria-label="Email Address" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" aria-label="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center p-3">
+    <p class="mb-0">&copy; 2025 Anshumat Foundation | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
